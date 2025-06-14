@@ -255,6 +255,9 @@
         .project-card:nth-child(5)::before {
             background-image: url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&q=80&w=800');
         }
+        .project-card:nth-child(6)::before {
+            background-image: url('../images/image1.jpg?auto=format&fit=crop&q=80&w=800');
+        }
         
         .project-card h3 {
             color: var(--tech-blue);
