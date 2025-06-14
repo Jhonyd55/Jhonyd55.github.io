@@ -258,6 +258,13 @@
         .project-card:nth-child(6)::before {
             background-image: url('../images/image1.jpg');
         }
+        .project-card:nth-child(7)::before {
+            background-image: url('../images/Tank2025.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
         
         .project-card h3 {
             color: var(--tech-blue);
