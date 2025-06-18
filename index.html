@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jhony Michael Durán - Portafolio de Trabajo</title>
+  <title>Jhony Michael Durán - Portafolio IA Kawaii</title>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
   <script defer src="js/script.js"></script>
@@ -78,20 +78,6 @@
                     <h3>Wine_Analysis</h3>
                     <p>Análisis exploratorio de datos sobre la calidad del vino tinto.</p>
                     <a href="https://github.com/Jhonyd55/Wine_Analysis" target="_blank">
-                        <i class="fab fa-github"></i> Ver en GitHub
-                    </a>
-                </div>
-                <div class="project-card">
-                    <h3>MichiRazaDetector</h3>
-                    <p>MichiRazaDetector es una herramienta para la clasificación automática de razas de gatos utilizando técnicas de aprendizaje profundo.</p>
-                    <a href="https://github.com/Jhonyd55/MichiRazaDetector" target="_blank">
-                        <i class="fab fa-github"></i> Ver en GitHub
-                    </a>
-                </div>
-              <div class="project-card">
-                    <h3>Tank 2025 Remake</h3>
-                    <p>Este es un juego de tanques inspirado en el clásico Battle City (Tank 1990) de la consola NES, desarrollado utilizando PyGame como parte de la prueba ESP_Python. A Practical Assignment for the Tutor de Kodland.</p>
-                    <a href="https://github.com/Jhonyd55/Tank2025-Remake" target="_blank">
                         <i class="fab fa-github"></i> Ver en GitHub
                     </a>
                 </div>
@@ -190,20 +176,264 @@
             </div>
         </section>
         
-        <section class="contact">
-          <h2><i class="fas fa-envelope"></i> Contacto</h2>
-          <p>¿Hablamos sobre inteligencia artificial, desarrollo de software o proyectos innovadores? ¡Estoy disponible para conectar!</p>
-          
-          <div class="contact-links">
-            <a href="https://github.com/Jhonyd55/" target="_blank" class="btn-link">
-              <i class="fab fa-github"></i> Visita mi GitHub
-            </a>
-            <a href="https://jhonyd55.github.io/cv/" target="_blank" class="btn-link">
-              <i class="fas fa-file-alt"></i> Ver mi Currículum
-            </a>
-          </div>
+        <style>
+            
+            
+            
+            
+            
+            
+            .contact-header {
+                background: linear-gradient(to right,#050b19, #30254b);
+                color: white;
+                padding: 30px;
+                text-align: center;
+                position: relative;
+                overflow: hidden;
+                
+            }
+            
+            .contact-header::before {
+                content: "";
+                position: absolute;
+                top: -50px;
+                left: -50px;
+                width: 150px;
+                height: 150px;
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 50%;
+            }
+            
+            .contact-header::after {
+                content: "";
+                position: absolute;
+                bottom: -70px;
+                right: -70px;
+                width: 200px;
+                height: 200px;
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 50%;
+            }
+            
+            .contact-header h2 {
+                font-size: 2.2rem;
+                margin-bottom: 15px;
+                position: relative;
+                z-index: 2;
+            }
+            
+            .contact-header h2 i {
+                margin-right: 15px;
+                font-size: 1.8rem;
+                color: #e74c3c;
+            }
+            
+            .contact-header p {
+                font-size: 1.1rem;
+                line-height: 1.6;
+                max-width: 600px;
+                margin: 0 auto;
+                position: relative;
+                z-index: 2;
+                color: var(--text-muted);
+            }
+            
+            .contact-content {
+                padding: 40px;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .contact-text {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            
+            .contact-text h3 {
+                color: #00bcd4;
+                font-size: 1.6rem;
+                margin-bottom: 20px;
+                position: relative;
+                display: inline-block;
+            }
+            
+            .contact-text h3::after {
+                content: "";
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80px;
+                height: 4px;
+                background: #3498db;
+                border-radius: 2px;
+            }
+            
+            
+            
+            .contact-links {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 20px;
+                justify-content: center;
+            }
+            
+            .contact-card {
+                background: #1d133d;
+                border-radius: 12px;
+                padding: 25px;
+                text-align: center;
+                transition: all 0.3s ease;
+                border: 1px solid #e9ecef;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            }
+            
+            .contact-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+                border-color: #3498db;
+            }
+            
+            .contact-card i {
+                font-size: 2.5rem;
+                color: #3498db;
+                margin-bottom: 20px;
+                background: rgba(52, 152, 219, 0.1);
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 20px;
+            }
+            
+            .contact-card h4 {
+                color: #2c3e50;
+                font-size: 1.3rem;
+                margin-bottom: 15px;
+            }
+            
+            .contact-card p {
+                color: #7f8c8d;
+                font-size: 1rem;
+                margin-bottom: 20px;
+                line-height: 1.6;
+            }
+            
+            .btn-link {
+                display: inline-block;
+                background: linear-gradient(to right, #3498db, #2c3e50);
+                color: white;
+                text-decoration: none;
+                padding: 12px 25px;
+                border-radius: 30px;
+                font-weight: 600;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+                border: none;
+                cursor: pointer;
+                font-size: 1rem;
+            }
+            
+            .btn-link:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 7px 20px rgba(52, 152, 219, 0.4);
+                background: linear-gradient(to right, #2c3e50, #3498db);
+            }
+            
+            .btn-link i {
+                font-size: 1.1rem;
+                margin-right: 8px;
+                color: white;
+                background: none;
+                width: auto;
+                height: auto;
+                display: inline-flex;
+            }
+            
+            .contact-footer {
+                background: #2c3e50;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                font-size: 0.95rem;
+            }
+            
+            .contact-footer p {
+                max-width: 600px;
+                margin: 0 auto;
+                line-height: 1.6;
+            }
+            
+            .contact-footer a {
+                color: #3498db;
+                text-decoration: none;
+                transition: 0.3s;
+            }
+            
+            .contact-footer a:hover {
+                text-decoration: underline;
+            }
+            
+            @media (max-width: 768px) {
+                .contact-header {
+                    padding: 25px 20px;
+                }
+                
+                .contact-content {
+                    padding: 25px;
+                }
+                
+                .contact-links {
+                    grid-template-columns: 1fr;
+                }
+                
+                .contact-header h2 {
+                    font-size: 1.8rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="contact-section">
+            <div class="contact-header">
+                <h2><i class="fas fa-envelope"></i> Contacto</h2>
+                <p>¿Hablamos sobre inteligencia artificial, desarrollo de software o proyectos innovadores? ¡Estoy disponible para conectar!</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h3>Conéctate Conmigo</h3>
+                    <p>Explora mi trabajo y experiencia profesional para conocer más sobre mis proyectos y habilidades técnicas.</p>
+                </div>
+                
+                <div class="contact-links">
+                    <div class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <h4>Mi Repositorio de Código</h4>
+                        <p>Descubre mis proyectos de código abierto, contribuciones y experimentos en desarrollo de software.</p>
+                        <a href="https://github.com/Jhonyd55/" target="_blank" class="btn-link">
+                            <i class="fab fa-github"></i> Visita mi GitHub
+                        </a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-file-alt"></i>
+                        <h4>Mi Experiencia Profesional</h4>
+                        <p>Revisa mi currículum completo para conocer mi trayectoria, habilidades y logros profesionales.</p>
+                        <a href="https://jhonyd55.github.io/cv/" target="_blank" class="btn-link">
+                            <i class="fas fa-file-alt"></i> Ver mi Currículum
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-footer">
+                <p>¿Interesado en colaborar o tienes alguna pregunta? No dudes en contactarme en <a href="mailto:jhonyd55@gmail.com">jhonyd55@gmail.com</a> o a través de mi perfil de <a href="https://linkedin.com/in/jhony-michael-duran-ramirez-a68b27163" target="_blank">LinkedIn</a>.</p>
+            </div>
         </section>
-
         
         <footer>
             <p>Desarrollado con ❤️ usando HTML, CSS y JavaScript | Tema Tecnológico & Electrónico</p>
